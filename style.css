@@ -1,0 +1,218 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica;
+}
+/*Header*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(148, 62, 165);
+  background-repeat: repeat-x;
+}
+
+#header img {
+  display: block;
+  margin: auto;
+  height: 70%;
+  padding-top: 15px;
+}
+
+/*Top Tab*/
+#tabs-top {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  z-index: 500;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(148, 62, 165);
+}
+
+#tabs-top a {
+  float: left;
+  display: block;
+  width: 33%;
+  height: 35px;
+  font-weight: 700;
+  color: azure;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 12px;
+}
+
+/*Main-Home-video*/
+.container {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 5%;
+}
+
+video {
+  width: 90%;
+  max-width: 500px; /* Adjust as needed */
+  height: auto;
+  object-fit: contain;
+  margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+  /* Tablets */
+  video {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile phones */
+  video {
+    max-width: 100%;
+  }
+}
+/*heading text*/
+#heading {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(215, 108, 236, 0.7);
+}
+
+/*Tab Bottom*/
+#tabs-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 500;
+  width: 100%;
+  height: 40;
+  background-color: rgb(148, 62, 165);
+}
+
+#tabs-bottom a {
+  float: left;
+  display: block;
+  width: 50%;
+  height: 35px;
+  font-weight: 700;
+  color: azure;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 12px;
+}
+
+/*MAIN*/
+#main {
+  margin-top: 119px;
+  background: url("/images/cheesecake.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  padding: 20px;
+}
+
+#main2 {
+  background: url("/images/cheesecake.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+#content {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+/*INFO BOX*/
+
+a.info-box {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  height: 90px;
+  display: block;
+  margin: auto;
+  margin-top: 11px;
+  padding: 1px;
+}
+
+/*INFO BOX FULL - content*/
+#info-box-full {
+  background: rgba(255, 255, 255, 0.8);
+  width: 65%;
+  display: block;
+  margin: auto;
+  margin-top: 10x;
+  padding: 65px;
+}
+/*BLUEBERRY*/
+img.blueberry-icon {
+  height: 30px;
+  width: 30px !important;
+  margin: 10px;
+  float: left;
+}
+
+/* Step 1: Register the font */
+@font-face {
+  font-family: "supermalibu";
+  src: url("fonts/supermalibu.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Step 2: Apply it to h3 */
+h3 {
+  font-family: "supermalibu", sans-serif;
+  font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+h3 img {
+  width: 40px;
+  height: 40px;
+}
+
+/*FORM*/
+input {
+  width: 100%;
+  height: 25px;
+  margin: 12px 0;
+  border: 1px solid #929292;
+}
+
+textarea {
+  width: 100%;
+  height: 65px;
+  margin: 12px 0;
+  border: 1px solid #929292;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  background-color: rgb(148, 62, 165);
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 12px 0;
+  padding: 8px 0;
+}
+
+footer {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin: 10px 0;
+  font-size: 16px;
+}
